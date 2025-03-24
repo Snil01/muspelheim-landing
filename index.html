@@ -3,139 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muspelheium - Sell Your Art</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Muspelheium - Art Marketplace</title>
     <style>
-        /* General Styles */
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background-image: url('https://source.unsplash.com/1600x900/?art,creative');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
             text-align: center;
+            color: white;
+            background: url('https://i.imgur.com/StEgTc8.jpg') no-repeat center center/cover;
         }
-
-        /* Container */
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.1);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            width: 90%;
-            max-width: 800px;
+            max-width: 1000px;
             margin: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            margin-top: 50px;
         }
-
-        /* Logo */
-        .logo {
-            width: 150px;
-            margin-bottom: 15px;
-        }
-
         h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 10px;
+            font-size: 36px;
         }
-
         p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
+            font-size: 18px;
         }
-
-        /* Image Gallery */
         .gallery {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
-
         .gallery img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
+            width: 30%;
+            height: auto;
             border-radius: 10px;
-            transition: transform 0.3s ease;
         }
-
-        .gallery img:hover {
-            transform: scale(1.05);
+        .cta {
+            margin-top: 20px;
         }
-
-        /* CTA Button */
-        .button {
-            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+        .cta button {
+            background: #ff6600;
             color: white;
-            padding: 12px 20px;
-            font-size: 1rem;
+            font-size: 18px;
+            padding: 10px 20px;
             border: none;
-            border-radius: 8px;
             cursor: pointer;
-            transition: transform 0.3s ease, background 0.3s ease;
+            border-radius: 5px;
         }
-
-        .button:hover {
-            transform: scale(1.05);
-            background: linear-gradient(45deg, #ff4b2b, #ff416c);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 30px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            .gallery img {
-                width: 140px;
-                height: 140px;
-            }
+        .cta button:hover {
+            background: #cc5500;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Logo -->
-        <img src="https://via.placeholder.com/150?text=Muspelheium+Logo" alt="Muspelheium Logo" class="logo">
+        <h1>Welcome to Muspelheium</h1>
+        <p>Your gateway to unique and exclusive artworks. Explore, create, and sell your artistic masterpieces.</p>
 
-        <h1>Sell Your Art with Muspelheium</h1>
-        <p>Join the revolution in media & arts! List your artworks, sell them to the right audience, and grow your creative business effortlessly.</p>
-
-        <!-- Gallery Section -->
         <div class="gallery">
-            <img src="https://source.unsplash.com/200x200/?painting,art" alt="Art 1">
-            <img src="https://source.unsplash.com/200x200/?digitalart,artist" alt="Art 2">
-            <img src="https://source.unsplash.com/200x200/?canvas,painting" alt="Art 3">
-            <img src="https://source.unsplash.com/200x200/?sculpture,design" alt="Art 4">
+            <img src="https://i.imgur.com/9xi83Mh.jpg" alt="Artwork 1">
+            <img src="https://i.imgur.com/2ypqW2W.jpg" alt="Artwork 2">
+            <img src="https://i.imgur.com/RlSKP2X.jpg" alt="Artwork 3">
         </div>
 
-        <!-- CTA Button -->
-        <button class="button" onclick="window.location.href='#'">Start Selling</button>
+        <div class="cta">
+            <button onclick="alert('Explore More Coming Soon!')">Explore More</button>
+        </div>
     </div>
 
 </body>
