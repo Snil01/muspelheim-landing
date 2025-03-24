@@ -20,30 +20,36 @@
             background-position: center;
             background-attachment: fixed;
             color: white;
+            text-align: center;
         }
 
-        /* Glassmorphism Container */
+        /* Container */
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            text-align: center;
             backdrop-filter: blur(10px);
             background: rgba(255, 255, 255, 0.1);
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            width: 80%;
-            max-width: 600px;
+            width: 90%;
+            max-width: 800px;
             margin: auto;
+        }
+
+        /* Logo */
+        .logo {
+            width: 150px;
+            margin-bottom: 15px;
         }
 
         h1 {
             font-size: 2.5rem;
             font-weight: 600;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         p {
@@ -51,6 +57,28 @@
             margin-bottom: 20px;
         }
 
+        /* Image Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* CTA Button */
         .button {
             background: linear-gradient(45deg, #ff416c, #ff4b2b);
             color: white;
@@ -67,10 +95,10 @@
             background: linear-gradient(45deg, #ff4b2b, #ff416c);
         }
 
-        /* Responsive Design */
+        /* Responsive */
         @media (max-width: 768px) {
             .container {
-                width: 90%;
+                width: 95%;
                 padding: 30px;
             }
 
@@ -81,15 +109,33 @@
             p {
                 font-size: 1rem;
             }
+
+            .gallery img {
+                width: 140px;
+                height: 140px;
+            }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <!-- Logo -->
+        <img src="https://via.placeholder.com/150?text=Muspelheium+Logo" alt="Muspelheium Logo" class="logo">
+
         <h1>Sell Your Art with Muspelheium</h1>
         <p>Join the revolution in media & arts! List your artworks, sell them to the right audience, and grow your creative business effortlessly.</p>
-        <button class="button" onclick="window.location.href='#'">Get Started</button>
+
+        <!-- Gallery Section -->
+        <div class="gallery">
+            <img src="https://source.unsplash.com/200x200/?painting,art" alt="Art 1">
+            <img src="https://source.unsplash.com/200x200/?digitalart,artist" alt="Art 2">
+            <img src="https://source.unsplash.com/200x200/?canvas,painting" alt="Art 3">
+            <img src="https://source.unsplash.com/200x200/?sculpture,design" alt="Art 4">
+        </div>
+
+        <!-- CTA Button -->
+        <button class="button" onclick="window.location.href='#'">Start Selling</button>
     </div>
 
 </body>
